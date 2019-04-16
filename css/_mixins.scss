@@ -1,0 +1,18 @@
+// mixin set to put radius around users profile image
+@mixin border-radius ($r) {
+    border-radius: $r;
+    -webkit-border-radius: $r;
+    -moz-border-radius: $r;
+    -ms-border-radius: $r;
+    -o-border-radius: $r;
+}
+// mixin function centers document title/headline
+
+@mixin center {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+
+}

@@ -1,0 +1,89 @@
+//imported variables
+@import 'settings.variables';
+// gray container housing all content
+@import 'container';
+// imprted mixins
+@import 'mixins';
+
+* {
+  margin: 0;
+}
+
+.headline {
+  @include center;
+}
+// documents title and authors name
+
+body {
+  font-family: $main-font;
+  margin: 0;
+  // main gray background box
+  #bg {
+    background-color: $bg-color;
+    width: 951px;
+    height: 474px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: -200;
+  }
+
+  // white box housing image and username/status
+  #box-1 {
+    background-color: $white-box;
+    width: 847px;
+    height: 383px;
+    z-index: -100;
+    position: absolute;
+    box-sizing: border-box;
+    margin: auto;
+  }
+
+  //Profile picture  of user with name/status
+  .profile-pic {
+    width: 225px;
+    padding: 40px;
+    @include border-radius (100%);
+  }
+  // gray box holding students inforamtion
+  #box-2 {
+    background-color: $gray-box;
+    width: 500px;
+    height: 309px;
+    box-sizing: border-box;
+    margin-left: 250px;
+  }
+}
+
+#users-name {
+    color: $primary-font-color;
+    margin-left: 80px;
+}
+
+section {
+  //unorder list of users information
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 30px;
+    // sapnused to bold strong mentions
+    span {
+      font-weight: 600;
+    }
+  }
+
+  li {
+    margin-bottom: 15px;
+    color: $primary-font-color;
+  }
+
+  .linkedin {
+    padding-left: 30px;
+
+    a {
+      text-decoration: none;
+      font-size: 0.9rem;
+      color: $primary-font-color;
+      padding-left: 10px;
+    }
+  }
+}
